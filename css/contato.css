@@ -2,7 +2,6 @@
     font-family: var(--open);
     background-color: var(--detalhes);
     color: var(--branco);
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +9,7 @@
 
 .contato__subtitulo {
   color: var(--branco);
+  
 }
 
 .contato p {
