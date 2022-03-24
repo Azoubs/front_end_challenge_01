@@ -1,0 +1,144 @@
+.contato {
+    font-family: var(--open);
+    background-color: var(--detalhes);
+    color: var(--branco);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__subtitulo {
+  color: var(--branco);
+}
+
+.contato p {
+  padding: 10px;
+  padding-left: 35px;
+}
+
+#contato__ultimo__paragrafo {
+  padding-bottom: 30px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    
+  }
+  
+  .input-container input,
+  .input-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 25px;
+    border: 1px solid var(--detalhes);
+    border-radius: 3px;
+    font-family: var(--open);
+  }
+
+  .input-container input:focus,
+  .input-container textarea:focus {
+    outline: none;
+    border: 1px solid var(--preto);
+  }
+
+  .contato__formulario__container__mensagem {
+    height: 20vh;
+    width: 28em;
+    box-sizing: border-box;
+  }
+
+  
+  .input-container .label {
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: -3px;
+    font-weight: bold;
+    color: var(--preto);
+    padding-left: 5px;
+    width: 45px;
+    color: var(--detalhes);
+  }
+
+  .input-container:focus .label {
+    color: red;
+    background: black;
+  }
+
+  .contato__formulario {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+      font-family: var(--mont);
+  }
+
+  .botao {
+    margin-bottom: 100px;
+    padding: 10px;
+    width: 50%;
+    border: 2px solid var(--preto);
+    
+    font-family: var(--mont);
+    font-weight: bold;
+    border-radius: 4px;
+    
+    transition: all .4s;
+    color: var(--branco);
+    background-color: var(--preto);
+  }
+
+  .botao:hover {
+    cursor: pointer;
+    color: var(--detalhes);
+    background-color: var(--branco);
+  }
+
+  /* --- Tablet --- */
+@media screen and (min-width: 768px) {
+  .contato__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1200px) {
+  .contato__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .input-container input,
+  .input-container textarea {
+    width: 70%;
+    
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-container {
+    width: 60%;
+    
+    margin: 0 auto;
+  }
+  
+  .input-container input,
+  .input-container textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contato p {
+    text-align: center;
+  }
+
+  .botao {
+    margin: 10px auto 70px;
+  }
+}

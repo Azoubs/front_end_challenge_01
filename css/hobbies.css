@@ -1,0 +1,66 @@
+.hobbies {
+    background-color: var(--claro-principal);
+    font-family: var(--mont);
+    color: var(--vermelho);
+}
+
+.hobbies__lista__cards {
+    width: 95%;
+    margin: 0 auto;
+    /* padding-bottom: 70px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hobbies__card {
+    background-color: var(--branco);
+    width: 60%;
+    padding: 30px;
+    padding-top: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hobbies__card:hover {
+    box-shadow: 2px 2px 5px var(--detalhes);
+}
+
+.hobbies__card i {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    color: var(--detalhes);
+}
+
+.skills__card p {
+    color: var(--preto);
+    font-size: 1em
+}
+/* --- Tablet --- */
+@media screen and (min-width: 768px) {
+    .hobbies__lista__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1200px) {
+    .hobbies__lista__cards {
+        width: 100%;
+    }
+    .hobbies__lista__cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .hobbies__card {
+        font-size: 1em;
+        padding: 10px;
+        padding-top: 100px;
+        width: 150px;
+    }
+
+    .hobbies__card i {
+        font-size: 1.5em;
+        padding-bottom: 8px;
+    }
+
+}

@@ -1,0 +1,62 @@
+.experiencia__cards__lista {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.experiencias__card {
+    width: 100%;
+    border-bottom: 1px solid var(--detalhes);
+    margin-bottom: 30px;
+}
+
+.experiencias__card h4 {
+    color: var(--detalhes);
+    font-family: var(--mont);
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.experiencias__card p {
+    color: var(--preto);
+    font-family: var(--open);
+    margin-top: 8px;
+}
+
+.experiencias__card img {
+    width: 100%;
+}
+
+.experiencia__cards__botoes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- Tablet --- */
+@media screen and (min-width: 768px) {
+    .experiencias__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--detalhes);
+    }
+
+    .experiencias__card__imagem {
+        width: 60%;
+        height: 100%;
+        padding: 0;
+        
+    }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1024px) {
+    .experiencias__card__imagem {
+        width: 70%;
+        height: 100%;
+        padding: 0;
+        
+    }
+}

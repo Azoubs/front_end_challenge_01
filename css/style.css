@@ -1,0 +1,106 @@
+:root {
+    /* --vermelho: #990011; */
+    --preto: #161616;
+    --detalhes: #165247;
+    --detalhes-escuro: #113d35;
+    --branco: #fbf9fb;
+    --claro-principal: #f4f2f0;
+    --claro-secundario: #c8d7d2;
+
+    --mont: 'Montserrat', sans-serif;
+    --hurri: 'Hurricane';
+    --open: 'Open Sans', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 30px ;
+    font-family: var(--mont);
+    color: var(--preto);
+    text-align: center;
+}
+
+.botao__primario {
+    display: inline-block;
+    font-family: var(--mont);
+    border: 1px solid var(--detalhes);
+    padding: 10px;
+    color: var(--detalhes);
+    width: 100px;
+    text-align: center;
+    transition: .4s;
+}
+
+.botao__secundario {
+    display: inline-block;
+    font-family: var(--mont);
+    border: 1px solid var(--detalhes);
+    padding: 10px;
+    color: var(--branco); 
+    background-color: var(--detalhes);
+    width: 100px;
+    text-align: center;
+    transition: .4s;
+}
+
+.botao__primario:hover {
+    border: 1px solid var(--detalhes-escuro);
+    color: var(--detalhes-escuro);
+    border-radius: 5%;
+    background-color: var(--claro-secundario);
+}
+
+.botao__secundario:hover {
+    background-color: var(--detalhes-escuro);
+    border: 1px solid var(--detalhes-escuro);
+}
+
+.botao__up a {
+    background: var(--branco);
+    position: fixed;
+    padding: 15px;
+    border-radius: 5%;
+    bottom: 10px;
+    right: 10px;
+    color: var(--detalhes);
+    border: 1px solid var(--detalhes);
+    transition: .6s;
+}
+
+.botao__up a:hover {
+    background: var(--preto);
+    color: var(--branco);
+    border: 1px solid var(--preto);
+}
+
+/* --- Tablet --- */
+@media screen and (min-width: 768px) {
+    .header__intro__texto {
+        margin-left: 10px;
+    }
+    
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1150px;
+        margin: 0 auto;
+    }
+}
